@@ -46,9 +46,9 @@ void CreateArray(int[] arrary)
     {
         for(int i=0; i<arrary.Length; i++)
         {
-            
+            Console.WriteLine($"Введите элемент массива {i} = ");
             arrary[i]=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Введите элемент массива  = " + arrary[i]);
+            Console.WriteLine($"Элемент под индексом {i} массива = " + arrary[i]);
         }
         return;
     }
