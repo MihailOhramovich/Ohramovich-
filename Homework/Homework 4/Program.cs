@@ -41,28 +41,29 @@ Console.WriteLine("Sum of digits in a number = " +Sum(a) );
 // Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран. Разработать метод CreateArray(int size), генерирующий массив на основе данных, вводимых пользователем.
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
-void CreateArray(int[] arrary)
+// void CreateArray(int[] arrary)
     
-    {
-        for(int i=0; i<arrary.Length; i++)
-        {
-            Console.WriteLine($"Введите элемент массива {i} = ");
-            arrary[i]=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Элемент под индексом {i} массива = " + arrary[i]);
-        }
-        return;
-    }
-    Console.WriteLine("Specify the size of the array");
-    int m=Convert.ToInt32(Console.ReadLine());
-    int[] array = new int [m];
-    CreateArray(array);
-        Console.Write("[");
-        for( int i =0;i<array.Length-1;i++)
-        {
+//     {
+//         for(int i=0; i<arrary.Length; i++)
+//         {
+//             Console.WriteLine($"Введите элемент массива {i} = ");
+//             arrary[i]=Convert.ToInt32(Console.ReadLine());
+//             Console.WriteLine($"Элемент под индексом {i} массива = " + arrary[i]);
+//         }
+//         return;
+//     }
+//     Console.WriteLine("Specify the size of the array");
+//     int m=Convert.ToInt32(Console.ReadLine());
+//     int[] array = new int [m];
+//     CreateArray(array);
+//         Console.Write("[");
+//         for( int i =0;i<array.Length-1;i++)
+//         {
             
-            Console.Write($"{array[i]}, " );
+//             Console.Write($"{array[i]}, " );
              
-        }
-         Console.Write($"{array[array.Length-1]}");
-        Console.Write("]");
-    
+//         }
+//          Console.Write($"{array[array.Length-1]}");
+//         Console.Write("]");
+
+
