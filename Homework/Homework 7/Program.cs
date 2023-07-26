@@ -13,7 +13,7 @@ double[,] CreateRandomDouble (int size, int size2)
     {
         for(int j=0; j<size2; j++ )
         {
-            myArray[i,j]= new Random().NextDouble()+ new Random().Next(-5,5);
+            myArray[i,j]= new Random().Next(-5,5);
             myArray[i,j]=Math.Round(myArray[i,j], 2);
         }
     }
@@ -70,21 +70,21 @@ void Search(int[,]arr, int Num, int num2)
     
 }
 
-void ArMean (int[,] arr)
+void ArMean (double[,] arr)
 {
-    int a1 =0;
+    double a1 =0;
     
-    for(int i=0; i<arr.GetLength(1); i++)
+    for(int j=0; j<arr.GetLength(1); j++)
     {
         a1=0;
-        for(int j=0;i<arr.GetLength(0);j++)
+        for(int i=0;i<arr.GetLength(0);i++)
         {
-            a1=arr[i,j]+a1;
+           a1=arr[i,j]+a1; 
+        }
             Convert.ToDouble(a1);
             a1= a1/arr.GetLength(1);
+            a1=Math.Round(a1,2);
             Console.Write($"{a1}  ");
-        }
-            
     }
         // Convert.ToDouble(a1);
         // a1= a1/arr.GetLength(1);
@@ -95,9 +95,9 @@ void ArMean (int[,] arr)
 Console.WriteLine("Input size Array ");
 int size =Convert.ToInt32(Console.ReadLine());
 int size2 =Convert.ToInt32(Console.ReadLine());
-int [,] array=CreatRandomInt(size,size2);
+double [,] array=CreateRandomDouble(size,size2);
 
-PrintIntArray(array);
+PrintDoubArray(array);
 // ArMean(array);
 // Console.WriteLine("Введите число для поиска");
 // int num=Convert.ToInt32(Console.ReadLine());
